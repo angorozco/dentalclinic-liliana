@@ -1,0 +1,197 @@
+/* --------------general--------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Autography';
+    src: url('../assets/fonts/Autography.otf');
+}
+
+@font-face {
+    font-family: 'Letters';
+    src: url('../assets/fonts/Letters\ for\ Learners.ttf');
+}
+
+:root{
+    /* colors */
+    --primary-color: #904E60;
+    --secondary-color:#DCB6D5;
+    --accent-color: #FFD166;
+
+    /* fonts */
+    --primary-font: 'Letters';
+    --secondary-font: 'Autography';
+}
+
+/* --------------navbar--------------- */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 10%;
+    height: 100%;
+}
+
+.navbar .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.navigation {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+
+.navigation a:hover{
+    color: var(--accent-color);
+}
+
+/* --------------header--------------- */
+
+header {
+    width: 100%;
+    display: flex;
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.header-img{
+    width: 50%;
+}
+
+.header-img img{
+    width: 100%;
+}
+
+.header-info{
+    width: 50%;
+}
+
+.header-info span{
+    background-color: var(--accent-color);
+    padding: .5rem;
+}
+
+
+
+/* --------------about--------------- */
+
+.about{
+    padding: 5rem;
+    width: 100%;
+    background-color: #faf0fa;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-info{
+    width: 45%;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+}
+
+.about-info span{
+    color: var(--accent-color);
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+}
+
+.about-info h2{
+    font-size: 4rem;
+}
+
+.about-info p{
+    margin-bottom: 2rem;
+}
+
+.about-img{
+    width: 45%;
+}
+
+.about-img img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    background-color: var(--accent-color);
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.about-team{
+   margin: 2rem 0 3rem 0;
+   
+}
+
+.about-team span{
+    color: var(--primary-color);
+}
+
+.team{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .member{
+    width: 150px;
+    height: 150px;
+}
+
+.team .member img{
+    width: 100%;
+    height: 100%;
+}
+
+.team .member p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+/* --------------services--------------- */
+
+.services{
+    width: 100%;
+}
+
+.services-text{
+    text-align: center;
+}
+
+.services-text span{
+    font-family: var(--secondary-font);
+    color: var(--accent-color);
+    font-size: 2rem;
+}
