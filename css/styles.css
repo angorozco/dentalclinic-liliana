@@ -32,17 +32,28 @@
 .navbar {
     width: 100%;
     height: 80px;
+    padding: 0 1rem;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
 }
 
 .navbar .logo {
-    width: 20%;
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar .logo img {
-    width: 100%;
+    width: 20%;
     height: 100%;
     object-fit: contain;
+}
+
+.navbar i {
+    color: var(--primary-color);
+    font-size: 3rem;
 }
 
 .navigation {
@@ -50,11 +61,12 @@
     height: 100%;
     list-style: none;
     display: none;
+    background-color: white;
 }
 
 .navigation a {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     color: var(--primary-color);
     font-family: var(--primary-font);
     font-weight: bold;
@@ -64,20 +76,39 @@
     color: var(--accent-color);
 }
 
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (min-width: 768px) {
     .navbar {
+        padding: 0;
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
 
     .navbar .logo {
-        width: 10%;
+        width: 30%;
+    }
+
+    .navbar i {
+        display: none;
     }
 
     .navigation {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+    }
+
+    .navigation a {
+        font-size: 1.8rem;
     }
 }
 
@@ -102,11 +133,12 @@ header {
 
 .header-info {
     width: 100%;
+    margin-top: 4rem;
 }
 
-/* .header-info h1 {
+.header-info h1 {
     width: 100%;
-} */
+}
 
 .header-info p {
     margin-top: 1rem;
@@ -131,6 +163,7 @@ header {
     }
     .header-info {
         width: 50%;
+        margin-top: 0;
     }
 }
 
@@ -346,10 +379,11 @@ header {
 .promo {
     width: 100%;
     height: 400px;
-    background-image: url("https://images.pexels.com/photos/6627422/pexels-photo-6627422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://images.pexels.com/photos/7787977/pexels-photo-7787977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     font-size: 2rem;
     font-family: var(--primary-font);
     color: var(--primary-color);
