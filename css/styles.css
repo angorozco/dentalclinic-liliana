@@ -582,9 +582,14 @@ footer .powered {
     position: fixed;
     right: 1rem;
     bottom: 4rem;
+    display: none;
 }
 
 .arrow img {
     width: 100%;
     height: 100%;
+}
+
+.arrowshow {
+    display: block;
 }
